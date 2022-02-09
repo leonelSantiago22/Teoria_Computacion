@@ -40,7 +40,7 @@ public class Automata {
 	 * CONSTRUCTOR
 	 */
 
-	public Automata() throws IOException {
+	public Automata(File ruta) throws IOException {
 
 		conjuntoQ = new ArrayList<String>();
 		conjuntoSigma = new ArrayList<String>();
@@ -50,8 +50,8 @@ public class Automata {
 		pila = new Stack<String>();
 		
 		String nombreFichero;
-		File ruta;
-		ruta = new File("C://Users//Leonel//Downloads//test.txt");
+		//File ruta;
+		//ruta = new File("C://Users//Leonel//Documents//UTM//semestre3//Computacion//Automatadepila//src//automatadepila//data_er1.txt");
 		
 		// Almacenar la informacion del fichero
 		String textoFichero;

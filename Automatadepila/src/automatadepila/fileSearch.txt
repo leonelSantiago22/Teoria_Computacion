@@ -1,0 +1,24 @@
+try{
+            String estados="[q][0-9]";
+        BufferedReader lector = new BufferedReader(new FileReader("C://Users//Leonel//Documents//UTM//semestre3//Computacion//Automatadepila//src//automatadepila//data_er1.txt"));
+        StringBuilder cadena = new StringBuilder();
+        String line = null;
+      while ((line = lector.readLine()) != null) {
+          cadena.append(line);
+      }
+      lector.close();
+      String contenido = cadena.toString();
+            //System.out.println(cadena);
+       Pattern patternEstados = Pattern.compile(estados);
+       
+       Matcher matcher = patternEstados.matcher(contenido);
+       int cont = 0; 
+       while(matcher.find())
+      {
+          System.out.println(matcher.group());
+          cont ++;
+      }
+        }catch(FileNotFoundException e){
+            e.printStackTrace();
+        }
+    }

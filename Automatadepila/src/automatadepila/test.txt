@@ -1,0 +1,12 @@
+q1 q2 q3
+0 1
+S A
+q1
+S
+q3
+q1 0 S q1 AS
+q1 0 A q1 AA
+q1 1 A q2 .
+q2 1 A q2 .
+q2 . S q3 S
+
